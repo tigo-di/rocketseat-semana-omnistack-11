@@ -1,0 +1,28 @@
+{
+  "name": "rocketseat-omnistack-11-backend",
+  "version": "1.0.0",
+  "description": "To Be Hero App - Backend. Created at RocketSeat OmniStack 11 - 23.03 to 27.03.20",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "rocketseat",
+    "backend"
+  ],
+  "author": "Tiago Dias",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "express": "^4.17.1",
+    "knex": "^0.20.13",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
