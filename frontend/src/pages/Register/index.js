@@ -1,42 +1,62 @@
 import React from 'react';
-import { FiLogIn } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
+
+import { FiArrowLeft } from 'react-icons/fi';
 
 import './styles.css';
 
 import logoImg from '../../assets/logo.svg';
-import heroesImg from '../../assets/heroes.png';
 
 
 export default function Register () {
 
   return (
 
-    <div className="logon-container">
+    <div className="register-container">
 
-      <section className="form">
-        
-        <img src={logoImg} alt="Be The Hero"/>
+      <div className="content">
+
+        <section>
+
+          <img src={logoImg} alt="To Be Hero"/>
+
+          <h1>Cadastro</h1>
+
+          <p>
+          Faça seu cadastro, entre na plataforma e ajude pessoas a encontrarem os casos da sua ONG
+          </p>  
+
+
+          <Link className="back-link" to="/">
+            <FiArrowLeft size={16} color="#e02041" />
+            Não tenho Cadastro
+          </Link>
+
+
+
+        </section>
+
 
         <form action="">
 
-          <h1>Register</h1>
-          
-          <input type="text" placeholder="Sua ID"/>
+            <input placeholder="nome da ONG" />
+            <input type="email" placeholder="E-mail" />
+            <input placeholder="Whatsapp" />
 
-          <button className="button" type="submit">Entrar</button>
+            <div className="input-group">
 
-          <a href="/register">
-            <FiLogIn size={16} color="#e02041" />
-            Não tenho Cadastro
-          </a>
+              <input placeholder="Cidade" />
+              <input placeholder="UF" style={{ width: 80, }} />
+
+            </div>
+
+
+            <button className="button" type="submit">Cadastrar</button>
 
         </form>
 
 
-      </section> 
-
-      <img src={heroesImg} alt="heroes"/>
-
+      </div>
 
     </div>
 
