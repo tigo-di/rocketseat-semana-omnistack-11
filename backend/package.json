@@ -4,7 +4,7 @@
   "description": "To Be Hero App - Backend. Created at RocketSeat OmniStack 11 - 23.03 to 27.03.20",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "start": "nodemon src/index.js"
   },
   "keywords": [
     "nodejs",
